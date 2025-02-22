@@ -209,6 +209,33 @@ nav ul {
     border-radius: 10px;
 }
 
+/* Fixed Button Container */
+.fixed-buttons {
+    position: fixed; /* Keeps the buttons fixed on the page */
+    top: 10px; /* Distance from the top */
+    right: 50px; /* Align to the right side */
+    display: flex; /* Arrange buttons horizontally */
+    gap: 50px; /* Space between buttons */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Button Styling */
+.fixed-buttons .btn {
+    padding: 10px 20px;
+    background: #ff4d4d; /* Red button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+/* Hover Effect */
+.fixed-buttons .btn:hover {
+    background: #cc0000; /* Darker red on hover */
+}
+
+
 /* Call-to-Action Section */
 .cta-container {
     text-align: center;
@@ -233,14 +260,122 @@ nav ul {
     color: white;
     padding: 12px 25px;
     border-radius: 30px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .ticket-button:hover {
     background-color: #7a4d00;
 }
+
+/* Ticket Page Styling */
+.ticket-info {
+    max-width: 800px;
+    margin: 100px auto 50px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 245, 235, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-info h2, .ticket-info h3 {
+    color: #a36a00; /* Elegant gold */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ticket-info p, .ticket-info ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.ticket-info ul {
+    list-style: none;
+    padding: 0;
+}
+#event-details {
+    text-align: center;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fef7e7; /* Light Background */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#event-details h2 {
+    font-size: 32px;
+    color: #a36a00; /* Gold Accent */
+    margin-bottom: 20px;
+}
+
+#event-details h3 {
+    font-size: 24px;
+    color: #d32f2f; /* Highlighted Color */
+    margin-top: 30px;
+}
+
+#event-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+#event-details li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background: #25D366; /* WhatsApp Green */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #1da851; /* Darker Green */
+}
+
+/* Tickets Section Styling */
+#tickets-left {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f3ff; /* Light Purple Background */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar Container */
+.progress-container {
+    width: 80%;
+    max-width: 600px;
+    height: 30px;
+    background: #ddd;
+    border-radius: 20px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* Progress Bar Fill */
+.progress-bar {
+    height: 100%;
+    width: 0%; /* Dynamically updated */
+    background: linear-gradient(90deg, #ff4d4d, #ff9900);
+    border-radius: 20px;
+    transition: width 0.5s ease;
+}
+
+#ticket-info {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
 
 /* When & Where Section */
 .when-where {
